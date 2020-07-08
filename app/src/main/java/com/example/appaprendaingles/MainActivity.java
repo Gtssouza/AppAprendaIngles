@@ -1,15 +1,12 @@
 package com.example.appaprendaingles;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 
 import com.example.appaprendaingles.fragments.BichosFragment;
-import com.example.appaprendaingles.fragments.LetrasFragment;
+import com.example.appaprendaingles.fragments.NumerosFragment;
 import com.example.appaprendaingles.fragments.VogaisFragment;
 import com.ogaclejapan.smarttablayout.SmartTabLayout;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItemAdapter;
@@ -25,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        getSupportActionBar().setElevation(0);
+
         smartTabLayout = findViewById(R.id.smartTabLayout);
         viewPager = findViewById(R.id.viewPager);
 
@@ -32,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 getSupportFragmentManager(),
                 FragmentPagerItems.with(this)
                         .add("Bichos", BichosFragment.class)
-                        .add("Letras", LetrasFragment.class)
+                        .add("Números", NumerosFragment.class)
                         .add("Vogais", VogaisFragment.class)
                 .create()
         );
