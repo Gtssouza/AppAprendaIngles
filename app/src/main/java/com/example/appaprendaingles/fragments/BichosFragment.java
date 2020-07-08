@@ -14,9 +14,6 @@ import android.widget.ImageButton;
 
 import com.example.appaprendaingles.R;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class BichosFragment extends Fragment implements View.OnClickListener{
 
     private ImageButton imgCao, imgGato, imgLeao, imgOvelha, imgMacaco, imgVaca;
@@ -25,7 +22,6 @@ public class BichosFragment extends Fragment implements View.OnClickListener{
     public BichosFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -91,6 +87,16 @@ public class BichosFragment extends Fragment implements View.OnClickListener{
                 }
             });
         }
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if(mediaPlayer!=null){
+            mediaPlayer.release();
+            mediaPlayer = null;
+        }
+
     }
 }
 

@@ -23,7 +23,7 @@
         app:layout_constraintGuide_percent="0.87" />
 
     <ImageButton
-        android:id="@+id/imageButton7"
+        android:id="@+id/imageButtonUm"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginTop="32dp"
@@ -34,7 +34,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton9"
+        android:id="@+id/imageButtonTres"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginTop="32dp"
@@ -42,10 +42,10 @@
         android:scaleType="centerCrop"
         android:src="@drawable/tres"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton7" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonUm" />
 
     <ImageButton
-        android:id="@+id/imageButton10"
+        android:id="@+id/imageButtonQuatro"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginTop="32dp"
@@ -53,10 +53,10 @@
         android:scaleType="centerCrop"
         android:src="@drawable/quatro"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton8" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonDois" />
 
     <ImageButton
-        android:id="@+id/imageButton11"
+        android:id="@+id/imageButtonCinco"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginTop="32dp"
@@ -64,10 +64,10 @@
         android:scaleType="centerCrop"
         android:src="@drawable/cinco"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton9" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonTres" />
 
     <ImageButton
-        android:id="@+id/imageButton12"
+        android:id="@+id/imageButtonSeis"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginTop="32dp"
@@ -75,10 +75,10 @@
         android:scaleType="centerCrop"
         android:src="@drawable/seis"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton10" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonQuatro" />
 
     <ImageButton
-        android:id="@+id/imageButton8"
+        android:id="@+id/imageButtonDois"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginTop="32dp"
